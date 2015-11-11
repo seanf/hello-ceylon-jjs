@@ -1,9 +1,15 @@
 # Proof of concept: Running Ceylon under Nashorn jjs
 
+### ceylon-users discussion:
+
+https://groups.google.com/d/msg/ceylon-users/W9FA-7lQUEc/wvl6oTgFEAAJ
+
 
 ## To run:
 
     $ jjs main.js
+
+This probably requires a pretty recent version of Java 8/Nashorn. Tested with JRE 1.8.0_60 on Windows 8.1 64-bit.
 
 
 ## To compile:
@@ -19,3 +25,9 @@ If you update the hello module, you must copy the compiled module from
 
 The directory `rhino_modules` also contains the ceylon.language JS files
 which were copied from ${ceylon.home}/repo/
+
+
+## Links:
+
+* Rhino-Require: https://github.com/micmath/Rhino-Require
+* Ceylon: http://ceylon-lang.org/
