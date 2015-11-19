@@ -26,6 +26,14 @@ See https://github.com/ceylon/ceylon-js/issues/316#issuecomment-42464517 and
 https://groups.google.com/d/msg/ceylon-users/W9FA-7lQUEc/nALYkkXLAAAJ
 
 
+    $ ./buildrun.sh
+    Note: Created module hello/1.0.0
+    Hello from Ceylon running in Nashorn jjs
+    ceylon.language::List<ceylon.language::Object>
+    lib/rhino-require.js:48 TypeError: java.lang.RuntimeException: Method code too large! has no such function "toSource"
+
+
+
 
 Rhino-Require runs the modules from the directory `rhino_modules`.
 
