@@ -5,17 +5,26 @@
 https://groups.google.com/d/msg/ceylon-users/W9FA-7lQUEc/wvl6oTgFEAAJ
 
 
+## To compile:
+
+    $ ceylon compile-js
+
+
 ## To run:
 
     $ jjs main.js
 
-This probably requires a pretty recent version of Java 8/Nashorn. Tested with JRE 1.8.0_60 on Windows 8.1 64-bit.
 
+## Or to do both:
 
-## To compile:
+    $ ./buildrun.sh
 
-NB: There is no build process yet; this is just a bunch of files, copied
-from all over the place!
+~~This probably requires a pretty recent version of Java 8/Nashorn. Tested with JRE 1.8.0_60 on Windows 8.1 64-bit.~~
+
+Nashorn currently (1.8.0.65) crashes when loading the full JSON model for ```function print``.
+See https://github.com/ceylon/ceylon-js/issues/316#issuecomment-42464517 and
+https://groups.google.com/d/msg/ceylon-users/W9FA-7lQUEc/nALYkkXLAAAJ
+
 
 
 Rhino-Require runs the modules from the directory `rhino_modules`.
